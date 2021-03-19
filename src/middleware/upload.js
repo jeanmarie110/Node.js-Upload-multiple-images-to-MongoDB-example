@@ -3,7 +3,7 @@ const multer = require("multer");
 const GridFsStorage = require("multer-gridfs-storage");
 
 var storage = new GridFsStorage({
-  url: "mongodb://localhost:27017/bezkoder_files_db",
+  url: "mongodb+srv://anouslecode:ronaldo@cluster0.srria.mongodb.net/anouslecode?retryWrites=true&w=majority",
   options: { useNewUrlParser: true, useUnifiedTopology: true },
   file: (req, file) => {
     const match = ["image/png", "image/jpeg"];
